@@ -27,7 +27,7 @@ const HeroSection = () => {
                 <div className="container card cst-hero-card p-4">
                   <h1 className="text-center mb-3"><b>Let’s talk</b></h1>
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col-sm-6">
                       <div className="inpt-wrap mb-3">
                         <label>Full name</label>
                         <input className="form-control" placeholder="Enter here" />
@@ -63,8 +63,8 @@ const HeroSection = () => {
                         <textarea className="form-control" rows={8} placeholder="Enter here"></textarea>
                       </div>
                     </div>
-                    <div className="d-flex justify-content-center">
-                      <button className="btn-success form-control w-50 cst-hero-submit-btn" onClick={handleSubmitButton}>Submit</button>
+                    <div className="d-flex justify-content-center ">
+                      <button className="btn-success form-control cst-hero-submit-btn w-50 " onClick={handleSubmitButton}>Submit</button>
                     </div>
                   </div>
                 </div>
