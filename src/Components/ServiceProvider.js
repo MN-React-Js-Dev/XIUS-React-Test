@@ -13,8 +13,8 @@ const ServiceProvider = () => {
     <>
       <section className='ims-benifit-section mt-5 mb-5'>
         <div className='container'>
-          <div className='row pt-5 pb-5'>
-            <h1 className='text-center pt-5 '>Why Leading Service Providers Choose XIUS IMS?</h1>
+          <div className='row pb-5'>
+            <h1 className='text-center '>Why Leading Service Providers Choose XIUS IMS?</h1>
             <p className='text-center fully-tried'>Commitment to Service Providers, Investment in Innovation and R&D, Decades of IP Expertise</p>
             <p className='text-center ims-suite'>XIUS is laser focused on helping service providers make their transition to IP as faster, frictionless, and profitable as possible. Our commitment to
               service providers, massive investment in innovation and R&D, decades of IP expertise, an industry-leading portfolio of carrier-grade IP solutions

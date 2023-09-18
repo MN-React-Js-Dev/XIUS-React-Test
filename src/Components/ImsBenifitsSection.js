@@ -13,8 +13,8 @@ const ImsBenifitsSection = () => {
         <>
             <section className='ims-benifit-section mt-5 mb-5'>
                 <div className='container'>
-                    <div className='row pt-5 pb-5'>
-                        <h1 className='text-center pt-5 '>How Does IMS Benefit Your Business?</h1>
+                    <div className='row pb-5'>
+                        <h1 className='text-center'>How Does IMS Benefit Your Business?</h1>
                         <p className='text-center business-para-ims'>Offer Ubiquitous Converged IP Multimedia Services that Combine Voice, Video, and Data Applications</p>
                         <p className='text-center second-para-ims mb-5'>IMS makes it possible for varied devices and networks to communicate in a secure and reliable manner using multimedia. The architectural
                             approach offers a single infrastructure and standard methods for managing, directing, and controlling sessions.</p>

@@ -17,8 +17,8 @@ const FeatureImsSection = () => {
         <>
             <section className='ims-benifit-section mt-5 mb-5'>
                 <div className='container'>
-                    <div className='row pt-5 pb-5'>
-                        <h1 className='text-center pt-5 '>Feature-packed IMS Core</h1>
+                    <div className='row pb-5'>
+                        <h1 className='text-center'>Feature-packed IMS Core</h1>
                         <p className='text-center fully-tried'>A fully tried, tested and trusted package for service providers</p>
                         <p className='text-center ims-suite mb-5'>XIUS IMS suite comes with all the capabilities required to handle a Single Core Architecture LTE/VoLTE and IMS subscribers, legacy POTS and
                             ISDN subscribers, interconnection with PSTN, PLMN and IP-based networks with full signaling interworking as well as media handling.</p>
