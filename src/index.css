@@ -1,0 +1,397 @@
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.hero-section {
+  background: linear-gradient(91deg, #000 0.76%, rgba(217, 217, 217, 0.00) 99.32%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  /* Ensure that content is on top of the background */
+}
+
+.hero-section::before {
+  content: "";
+  background-image: url(./assets/Images/heroimage.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.hero-heading {
+  color: #FFF;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.4px;
+}
+
+.para-hero {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.talk-to-expert-btn {
+  background-color: white !important;
+  color: #EE3123;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+.cst-hero-submit-btn {
+  background: #0097D7 !important;
+  border-radius: 10px;
+  border: none !important;
+  color: white !important;
+
+}
+
+.cst-hero-card {
+  border-radius: 33px;
+  background: #FFF;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-control {
+  border-radius: 9px;
+  border: 1px solid #000;
+  background: #FFF;
+}
+
+.cloud-native-para {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: -0.96px;
+}
+
+.transition-seamlessly-para {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -0.8px;
+}
+
+.cst-card-ims {
+  border-radius: 60px;
+  border: 2px solid rgba(0, 151, 215, 1);
+  background: #FFF;
+  max-height: 100%;
+}
+
+.ims-section {
+  background: linear-gradient(257deg, #0097D7 0%, #EE3123 100%);
+}
+
+.contact-us-button {
+  background-color: white !important;
+  color: #EE3123;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
+.contact-us-section {
+  color: white;
+
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.contact-us-section::before {
+  content: "";
+  background-image: url(./assets/Images/contactuasImage.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.social-meadia-div {
+  gap: 12px;
+}
+
+.footer-section h3 {
+  opacity: 0.8;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: -0.8px;
+}
+
+.copright-para {
+  color: #000;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.72px;
+}
+
+.copright-para span {
+  text-decoration-line: underline;
+}
+
+.footer-para {
+  opacity: 0.8;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: -0.8px;
+}
+
+.are-you-ready {
+  color: #FFF;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -2.4px;
+}
+
+.benifits-para {
+  color: #262626;
+  font-family: Work Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+
+.ims-suite {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -0.8px;
+}
+
+.fully-tried {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: -0.96px;
+}
+
+.ims-benifit-section h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+
+.ims-benifit-section h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.ims-benifit-section h2 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+
+.cst-card-ims p {
+  color: #262626;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.36px;
+}
+
+.business-para-ims {
+  color: var(--Text, #262626);
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 42px;
+  /* 175% */
+  letter-spacing: -0.96px;
+}
+
+.second-para-ims {
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -0.8px;
+}
+
+.ims-section h1 {
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.cst-card-ims h2 {
+  color: #262626;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+
+.mobile-communication {
+  font-family: Work Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: -0.96px;
+}
+
+.power-generation h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.cst-second-hero-card {
+  border-radius: 33px;
+  height: 552px;
+  background: var(--Grad, linear-gradient(180deg, #0097D7 0%, #EE3123 100%));
+}
+
+.correct-icon {
+  width: 139px;
+  height: 139px;
+}
+
+.cst-second-hero-card h3 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.6px;
+}
+
+.cst-second-hero-card p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.96px;
+}
+
+
+@media (max-width: 575.98px) {
+  .mobile-res-cls {
+    text-align: center;
+  }
+
+  .cst-second-hero-card {
+    height: 610px;
+  }
+
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-heading {
+
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.12px;
+  }
+
+  .para-hero {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.64px;
+  }
+
+  .inpt-wrap {
+    text-align: left;
+  }
+
+  .power-generation h1 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.12px;
+  }
+
+  .cloud-native-para {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.64px;
+  }
+
+  .ims-benifit-section h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.12px;
+  }
+
+  .fully-tried {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.64px;
+  }
+
+  .are-you-ready {
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.12px;
+  }
+
+}
