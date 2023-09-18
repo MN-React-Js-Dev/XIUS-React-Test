@@ -28,21 +28,11 @@ const Header = () => {
             <form class="d-flex px-4" role="search">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item"></li>
-                <a class="nav-link active" aria-current="page" href="#">
-                  Overview
-                </a>
-                <a class="nav-link " aria-current="page" href="#">
-                  Why IMS
-                </a>
-                <a class="nav-link " aria-current="page" href="#">
-                  Benefits
-                </a>
-                <a class="nav-link " aria-current="page" href="#">
-                  Why XIUS
-                </a>
-                <a class="nav-link " aria-current="page" href="#">
-                  Features
-                </a>
+                <a class="nav-link active" aria-current="page" href="#" style={{ textDecoration: "underline" }}><b>Overview</b></a>
+                <a class="nav-link" aria-current="page" href="#">Why IMS</a>
+                <a class="nav-link" aria-current="page" href="#">Benefits</a>
+                <a class="nav-link" aria-current="page" href="#">Why XIUS</a>
+                <a class="nav-link" aria-current="page" href="#">Features</a>
               </ul>
             </form>
           </div>
