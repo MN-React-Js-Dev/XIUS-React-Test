@@ -19,14 +19,14 @@ const ImsBenifitsSection = () => {
                         <p className='text-center second-para-ims mb-5'>IMS makes it possible for varied devices and networks to communicate in a secure and reliable manner using multimedia. The architectural
                             approach offers a single infrastructure and standard methods for managing, directing, and controlling sessions.</p>
                         <div className='col-sm-4 pb-5'>
-                            <div className='cst-card-ims p-4'>
+                            <div className='cst-card-ims gradient-box p-4'>
                                 <img src={VectorNineImage} className='img-fluid mb-4' />
                                 <h2>Interoperability</h2>
-                                <p>IMS is designed to promote interoperability between different network technologies and service providers. It allows seamless communication and service delivery across heterogeneous networks, such as 4G, 5G, Wi-Fi, and fixed broadband.</p>
+                                <p>IMS is designed to promote interoperability between different network technologies and service providers. This enables real-time communication. It allows seamless communication and service delivery across heterogeneous networks, such as 4G, 5G, Wi-Fi, and fixed broadband.</p>
                             </div>
                         </div>
                         <div className='col-sm-4 pb-5'>
-                            <div className='cst-card-ims p-4'>
+                            <div className='cst-card-ims gradient-box p-4'>
                                 <img src={VectorTenImage} className='img-fluid mb-4' />
                                 <h2>Quality of Service (QoS)</h2>
                                 <p>IMS employs the Session Initiation Protocol (SIP) for session control, allowing efficient establishment, modification, and termination of multimedia sessions. This enables real-time communication between users in various service scenarios.
@@ -35,7 +35,7 @@ const ImsBenifitsSection = () => {
                             </div>
                         </div>
                         <div className='col-sm-4 pb-5 '>
-                            <div className='cst-card-ims p-4'>
+                            <div className='cst-card-ims gradient-box p-4'>
                                 <img src={VectorElevenImage} className='img-fluid mb-4' />
                                 <h2>Scalability and Flexibility</h2>
                                 <p>IMS is built with scalability in mind, allowing service providers to expand their networks to support a growing
@@ -44,7 +44,7 @@ const ImsBenifitsSection = () => {
                             </div>
                         </div>
                         <div className='col-sm-4 pb-5'>
-                            <div className='cst-card-ims p-4'>
+                            <div className='cst-card-ims gradient-box p-4'>
                                 <img src={VectorTwellImage} className='img-fluid mb-4' />
                                 <h2>Session Control</h2>
                                 <p>IMS employs the Session Initiation Protocol (SIP) for session control, allowing efficient establishment, modification, and
@@ -52,7 +52,7 @@ const ImsBenifitsSection = () => {
                             </div>
                         </div>
                         <div className='col-sm-4 pb-5'>
-                            <div className='cst-card-ims p-4'>
+                            <div className='cst-card-ims gradient-box p-4'>
                                 <img src={VectorThirteenImage} className='img-fluid mb-4' />
                                 <h2>Rich Communication Services (RCS)</h2>
                                 <p>IMS forms the foundation for implementing RCS, which provides enhanced communication
@@ -60,7 +60,7 @@ const ImsBenifitsSection = () => {
                             </div>
                         </div>
                         <div className='col-sm-4 pb-5'>
-                            <div className='cst-card-ims p-4'>
+                            <div className='cst-card-ims gradient-box p-4'>
                                 <img src={VectorForteenImage} className='img-fluid mb-4' />
                                 <h2>Security</h2>
                                 <p>IMS is designed to promote interoperability between different network technologies and service providers. It allows seamless communication and service delivery across heterogeneous networks, such as 4G, 5G, Wi-Fi, and fixed broadband.</p>

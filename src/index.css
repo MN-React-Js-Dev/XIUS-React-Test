@@ -94,12 +94,60 @@ textarea {
   letter-spacing: -0.8px;
 }
 
-.cst-card-ims {
-  border-radius: 60px;
-  border: 2px solid rgba(0, 151, 215, 1);
+
+
+.gradient-box {
+  border-radius: 30px;
   background: #FFF;
-  max-height: 100%;
+  max-width: 28em;
+  position: relative;
+  box-sizing: border-box;
+  color: #000;
+  background: white;
+  background-clip: padding-box;
+  border: solid 5px transparent;
 }
+
+.gradient-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -5px;
+  border-radius: inherit;
+  background: linear-gradient(180deg, #0097D7 0%, #EE3123 100%);
+}
+
+
+
+.gradient-box-two {
+  border-radius: 60px;
+  background: #FFF;
+  position: relative;
+  box-sizing: border-box;
+  color: #000;
+  background: white;
+  background-clip: padding-box;
+  border: solid 5px transparent;
+}
+
+.gradient-box-two:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -5px;
+  border-radius: inherit;
+  background: linear-gradient(180deg, #0097D7 0%, #EE3123 100%);
+}
+
+
 
 .ims-section {
   background: linear-gradient(257deg, #0097D7 0%, #EE3123 100%);
