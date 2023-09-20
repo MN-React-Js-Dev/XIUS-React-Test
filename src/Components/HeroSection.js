@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import RequestRecive from "./RequestRecive";
 import LetsTalkComponent from "./LetsTalkComponent";
 
@@ -9,20 +9,19 @@ const HeroSection = () => {
     setflag(true)
   }
   useEffect(() => {
-    // Start automatic carousel change
     const interval = setInterval(() => {
       const carousel = document.getElementById("carouselExampleIndicators");
       const currentIndex = parseInt(carousel.dataset.slideTo, 10) || 0;
       const nextIndex = currentIndex + 1 >= 2 ? 0 : currentIndex + 1;
       carousel.dataset.slideTo = nextIndex;
       carousel.querySelector(`[data-bs-slide-to="${nextIndex}"]`).click();
-    }, 2500); // Change slide every 5 seconds
+    }, 2500);
 
     return () => {
-      // Clean up interval when component is unmounted
       clearInterval(interval);
     };
-  }, []); // Run this effect once on component mount
+  }, []);
+
   return (
     <>
 
@@ -102,14 +101,14 @@ const HeroSection = () => {
             <section className="hero-section-two d-none d-lg-block d-print-block">
               <div className="containers cst-container-hero-section ">
                 <div className="row">
-                  <div className="col-sm-6  ">
+                  <div className="col-sm-6">
                     <h1 className="hero-heading mt-5">
                       Unlock the Power of IP Multimedia Subsystem with XIUS IMS
                     </h1>
                     <p className="para-hero mt-2">
                       Take Your Communication Infrastructure to the Next Level with IMS
                     </p>
-                    <button className=" mb-5 btn btn-outline text-danger talk-to-expert-btn p-3 px-5">Talk to our experts</button>
+                    <button className="mb-5 btn btn-outline text-danger talk-to-expert-btn p-3 px-5">Talk to our experts</button>
                   </div>
                   <div className="col-sm-6 second-column-hero">
                     {flag ? <RequestRecive /> : <>
