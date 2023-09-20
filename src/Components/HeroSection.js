@@ -1,14 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import RequestRecive from "./RequestRecive";
 import LetsTalkComponent from "./LetsTalkComponent";
- 
+
 const HeroSection = () => {
   const [flag, setflag] = useState(false)
 
   const handleSubmitButton = () => {
     setflag(true)
   }
- 
+
   return (
     <>
 
@@ -90,10 +90,10 @@ const HeroSection = () => {
                 <div className="row">
                   <div className="col-sm-6  ">
                     <h1 className="hero-heading mt-5">
-                    Unlock the Power of IP Multimedia Subsystem with XIUS IMS
+                      Unlock the Power of IP Multimedia Subsystem with XIUS IMS
                     </h1>
                     <p className="para-hero mt-2">
-                    Take Your Communication Infrastructure to the Next Level with IMS
+                      Take Your Communication Infrastructure to the Next Level with IMS
                     </p>
                     <button className=" mb-5 btn btn-outline text-danger talk-to-expert-btn p-3 px-5">Talk to our experts</button>
                   </div>
@@ -150,14 +150,14 @@ const HeroSection = () => {
             </section>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        {/* <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
+        </button> */}
       </div>
 
 
