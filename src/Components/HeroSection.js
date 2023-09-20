@@ -82,12 +82,12 @@ const HeroSection = () => {
           <h1 className="mobile-hero-heading text-center text-white ">Revolutionize Your Communication with IP Multimedia Subsystem (IMS)</h1>
           <p className="mobile-hero-para text-center ">XIUS IMS Suite – an open, carrier-grade, fully virtualized and cloud ready solution for fixed, mobile and converged service providers.</p>
           <div className="text-center mt-5">
-            <button className="mobile-hero-button mb-5 btn btn-outline text-danger talk-to-expert-btn p-3 px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Talk to our experts</button>
+            <button className="mobile-hero-button mb-5 btn btn-outline text-danger talk-to-expert-btn p-3 px-4" >Talk to our experts</button>
           </div>
         </div>
       </section>
       <div className="d-flex justify-content-center mt-3 d-sm-none">
-        <button className="btn-success col-10 cst-hero-submit-btn p-3">Contact us</button>
+        <button className="btn-success col-10 cst-hero-submit-btn p-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact us</button>
       </div>
 
       <LetsTalkComponent />
