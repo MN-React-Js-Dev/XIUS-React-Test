@@ -1,5 +1,7 @@
 import React from "react";
 import Logo from "../assets/Images/mainLogo.png";
+import MenuIcon from "../assets/Images/menuIcon.png";
+
 const Header = () => {
   return (
     <>
@@ -8,8 +10,9 @@ const Header = () => {
           <a class="navbar-brand px-4" href="#">
             <img src={Logo} className="img-fluid" />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class=" btn btn-outline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            {/* <span class="navbar-toggler-icon"></span> */}
+            <img src={MenuIcon} className="fluid-img" />
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
