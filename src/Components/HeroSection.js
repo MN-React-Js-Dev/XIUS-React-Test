@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import RequestRecive from "./RequestRecive";
+import LetsTalkComponent from "./LetsTalkComponent";
 
 const HeroSection = () => {
   const [flag, setflag] = useState(false)
@@ -9,10 +10,10 @@ const HeroSection = () => {
   }
   return (
     <>
-      <section className="hero-section">
-        <div className="container">
+      <section className="hero-section d-none d-lg-block d-print-block" >
+        <div className="containers cst-container-hero-section   ">
           <div className="row">
-            <div className="col-sm-6 mt-5">
+            <div className="col-sm-6  ">
               <h1 className="hero-heading mt-5">
                 Revolutionize Your Communication with IP Multimedia Subsystem (IMS)
               </h1>
@@ -20,27 +21,27 @@ const HeroSection = () => {
                 XIUS IMS Suite – an open, carrier-grade, fully virtualized and
                 cloud-ready solution for fixed, mobile, and converged service providers.
               </p>
-              <button className=" mb-5 btn btn-outline text-danger talk-to-expert-btn p-2 px-4">Talk to our experts</button>
+              <button className=" mb-5 btn btn-outline text-danger talk-to-expert-btn p-3 px-5">Talk to our experts</button>
             </div>
-            <div className="col-sm-6">
+            <div className="col-sm-6 second-column-hero">
               {flag ? <RequestRecive /> : <>
-                <div className="container card cst-hero-card p-4">
-                  <h1 className="text-center mb-3"><b>Let’s talk</b></h1>
+                <div className="container card cst-hero-card ">
                   <div className="row">
+                    <h1 className="text-center "><b>Let’s talk</b></h1>
                     <div className="col-sm-6">
-                      <div className="inpt-wrap mb-3">
+                      <div className="inpt-wrap ">
                         <label>Full name</label>
                         <input className="form-control" placeholder="Enter here" />
                       </div>
-                      <div className="inpt-wrap mb-3">
+                      <div className="inpt-wrap ">
                         <label>Work email ID</label>
                         <input className="form-control" placeholder="Enter here" />
                       </div>
-                      <div className="inpt-wrap mb-3">
+                      <div className="inpt-wrap ">
                         <label>Mobile number</label>
                         <input className="form-control" placeholder="Enter here" />
                       </div>
-                      <div className="inpt-wrap mb-3">
+                      <div className="inpt-wrap ">
                         <label>Country</label>
                         <input className="form-control" placeholder="Enter here" />
                       </div>
@@ -50,15 +51,15 @@ const HeroSection = () => {
                       </div>
                     </div>
                     <div className="col-sm-6">
-                      <div className="inpt-wrap mb-3">
+                      <div className="inpt-wrap ">
                         <label>Company name</label>
                         <input className="form-control" placeholder="Enter here" />
                       </div>
-                      <div className="inpt-wrap mb-3">
+                      <div className="inpt-wrap ">
                         <label>Industry</label>
                         <input className="form-control" placeholder="Enter here" />
                       </div>
-                      <div className="inpt-wrap mb-3">
+                      <div className="inpt-wrap ">
                         <label>Message</label>
                         <textarea className="form-control" rows={8} placeholder="Enter here"></textarea>
                       </div>
@@ -68,12 +69,30 @@ const HeroSection = () => {
                     </div>
                   </div>
                 </div>
+
               </>}
 
             </div>
           </div>
         </div>
       </section>
+
+      <section className="for-mobile-hero-mobile d-sm-none ">
+        <div className="container">
+          <h1 className="mobile-hero-heading text-center text-white ">Revolutionize Your Communication with IP Multimedia Subsystem (IMS)</h1>
+          <p className="mobile-hero-para text-center ">XIUS IMS Suite – an open, carrier-grade, fully virtualized and cloud ready solution for fixed, mobile and converged service providers.</p>
+          <div className="text-center mt-5">
+            <button className="mobile-hero-button mb-5 btn btn-outline text-danger talk-to-expert-btn p-3 px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Talk to our experts</button>
+          </div>
+        </div>
+      </section>
+      <div className="d-flex justify-content-center mt-3 d-sm-none">
+        <button className="btn-success col-10 cst-hero-submit-btn p-3">Contact us</button>
+      </div>
+
+      <LetsTalkComponent />
+
+
     </>
   );
 };

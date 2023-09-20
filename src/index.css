@@ -7,7 +7,47 @@ body {
   padding-top: 80px;
   padding-bottom: 80px;
   position: relative;
+  height: 942px;
   /* Ensure that content is on top of the background */
+}
+
+.for-mobile-hero-mobile {
+  background-image: url(./assets/Images/hero-mobile.png);
+  background-size: cover;
+  height: 620px;
+  padding-top: 179px;
+}
+
+.mobile-hero-para {
+  padding-top: 24px;
+  color: #D2D2D2;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.64px;
+}
+
+.mobile-hero-button {
+  padding-top: 24px;
+
+}
+
+.mobile-hero-heading {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.12px;
+}
+
+.special-cls {
+  /* width: 120%; */
+  height: 100%;
+}
+
+.second-column-hero {
+  margin-top: 80px;
 }
 
 .hero-section::before {
@@ -26,18 +66,32 @@ body {
   gap: 12px;
 }
 
+label {
+  font-weight: 500;
+}
+
 .hero-heading {
   color: #FFF;
-  font-size: 50px;
+  /* font-size: 50px; */
+  font-size: 60px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -2.4px;
 }
 
+.cst-container-hero-section {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 90px;
+  margin-right: 90px;
+  height: 942px;
+
+}
+
 .para-hero {
   color: #FFF;
-  font-size: 24px;
+  font-size: 29px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -66,11 +120,12 @@ body {
 .cst-hero-card {
   border-radius: 33px;
   background: #FFF;
+  width: 773px;
+  height: 645px;
+  padding: 40px;
 }
 
-textarea {
-  resize: none;
-}
+
 
 .form-control {
   border-radius: 9px;
@@ -95,17 +150,21 @@ textarea {
 }
 
 
+.cst-card-ims {
+  height: 100%;
+  width: 100%;
+
+}
 
 .gradient-box {
-  border-radius: 30px;
-  background: #FFF;
+  border-radius: 60px;
   max-width: 28em;
   position: relative;
   box-sizing: border-box;
   color: #000;
   background: white;
-  background-clip: padding-box;
-  border: solid 5px transparent;
+  background-clip: border-box;
+  border: solid 3px transparent;
 }
 
 .gradient-box:before {
@@ -147,10 +206,19 @@ textarea {
   background: linear-gradient(180deg, #0097D7 0%, #EE3123 100%);
 }
 
-
+.mobile-request-recive {
+  background: linear-gradient(257deg, #0097D7 0%, #EE3123 100%);
+  height: 620px;
+}
 
 .ims-section {
   background: linear-gradient(257deg, #0097D7 0%, #EE3123 100%);
+}
+ 
+
+.mobile-correct-icon {
+  margin-top: 130px;
+  /* margin-bottom: 297px; */
 }
 
 .contact-us-button {
@@ -453,4 +521,74 @@ textarea {
     line-height: normal;
     letter-spacing: -1.12px;
   }
+}
+
+.cst-hero-submit-btn {
+  padding: 10px 10px 10px 10px;
+}
+
+.inpt-wrap {
+  margin-bottom: 30px;
+}
+
+
+textarea {
+  height: 222px;
+  resize: none;
+}
+
+.hero-heading {
+  padding-top: 18%;
+}
+
+/* .csr-second-container{
+  max-width: 1600px;
+} */
+
+
+/* Laptop screen */
+@media (max-width:1366px) {
+  .hero-heading {
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.4px;
+  }
+
+  .hero-section {
+    height: 620px;
+  }
+
+  .cst-hero-card {
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+  }
+
+  .cst-hero-submit-btn {
+    padding: 8px 8px 8px 8px;
+  }
+
+  .para-hero {
+    font-size: 20px;
+  }
+
+  .inpt-wrap {
+    margin-bottom: 10px;
+  }
+
+  textarea {
+    height: 165px;
+  }
+
+  .second-column-hero {
+    margin-top: 0px;
+  }
+
+  .are-you-ready {
+    font-size: 40px;
+  }
+
 }
