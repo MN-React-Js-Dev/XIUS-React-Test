@@ -8,7 +8,21 @@ const HeroSection = () => {
   const handleSubmitButton = () => {
     setflag(true)
   }
+  useEffect(() => {
+    // Start automatic carousel change
+    const interval = setInterval(() => {
+      const carousel = document.getElementById("carouselExampleIndicators");
+      const currentIndex = parseInt(carousel.dataset.slideTo, 10) || 0;
+      const nextIndex = currentIndex + 1 >= 2 ? 0 : currentIndex + 1;
+      carousel.dataset.slideTo = nextIndex;
+      carousel.querySelector(`[data-bs-slide-to="${nextIndex}"]`).click();
+    }, 2500); // Change slide every 5 seconds
 
+    return () => {
+      // Clean up interval when component is unmounted
+      clearInterval(interval);
+    };
+  }, []); // Run this effect once on component mount
   return (
     <>
 
