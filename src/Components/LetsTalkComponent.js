@@ -15,9 +15,10 @@ const LetsTalkComponent = () => {
     const handleSubmitButton = () => {
         setSubmitFlag(true)
     }
+
     return (
         <>
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade d-sm-none" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="d-flex justify-content-end pt-4 px-4">

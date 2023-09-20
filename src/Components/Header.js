@@ -8,10 +8,9 @@ const Header = () => {
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand px-4" href="#">
-            <img src={Logo} className="img-fluid" />
+            <span className="navbar tooger-icon "></span><img src={Logo} className="img-fluid" />
           </a>
-          <button class=" btn btn-outline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            {/* <span class="navbar-toggler-icon"></span> */}
+          <button class="btn btn-outline d-sm-none  mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <img src={MenuIcon} className="fluid-img" />
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">

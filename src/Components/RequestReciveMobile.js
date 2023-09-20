@@ -4,7 +4,7 @@ import CorrectIcon from '../assets/Images/correctIcon.png'
 const RequestReciveMobile = ({handleSubmitButton}) => {
     return (
         <>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade d-sm-none" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog ">
                     <div class="modal-content ims-section">
                         <div className='d-flex justify-content-end pt-2 px-2 '>
