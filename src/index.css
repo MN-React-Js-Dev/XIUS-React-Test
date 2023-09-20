@@ -514,12 +514,15 @@ label {
   }
 
   .are-you-ready {
-    text-align: center;
-    font-size: 28px;
+    text-align: center !important;
+    font-size: 34px !important;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: -1.12px;
+  }
+  .center-content-mobile{
+    text-align: center;
   }
 }
 
