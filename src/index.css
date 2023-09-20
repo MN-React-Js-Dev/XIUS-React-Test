@@ -11,6 +11,43 @@ body {
   /* Ensure that content is on top of the background */
 }
 
+.hero-section::before {
+  content: "";
+  background-image: url(./assets/Images/heroimage.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero-section-two {
+  background: linear-gradient(91deg, #000 0.76%, rgba(217, 217, 217, 0.00) 99.32%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  height: 942px;
+  /* Ensure that content is on top of the background */
+}
+
+.hero-section-two::before {
+  content: "";
+  background-image: url(./assets/Images/heroSecindImage.png);
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+ 
+.white-button {
+  color: white;
+}
+
 .for-mobile-hero-mobile {
   background-image: url(./assets/Images/hero-mobile.png);
   background-size: cover;
@@ -50,17 +87,6 @@ body {
   margin-top: 80px;
 }
 
-.hero-section::before {
-  content: "";
-  background-image: url(./assets/Images/heroimage.png);
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
 
 .navbar-nav {
   gap: 12px;
