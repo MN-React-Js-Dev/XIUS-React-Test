@@ -13,7 +13,7 @@ body {
 
 .hero-section::before {
   content: "";
-  background-image: url(./assets/Images/heroimage.png);
+  /* background-image: url(./assets/Images/heroimage.png); */
   background-size: cover;
   position: absolute;
   top: 0;
@@ -43,7 +43,12 @@ body {
   height: 100%;
   z-index: -1;
 }
- 
+
+.scrollable-button {
+  position: fixed;
+  bottom: 10px;
+}
+
 .white-button {
   color: white;
 }
@@ -356,7 +361,7 @@ label {
   line-height: normal;
 }
 
- 
+
 .ims-benifit-section h2 {
   font-size: 22px;
   font-style: normal;
@@ -544,7 +549,7 @@ label {
     text-align: center;
   }
 
- 
+
 
   .contact-us-section-mobile {
     color: white;
@@ -607,10 +612,11 @@ textarea {
     height: 620px;
   }
 
-  .hero-section-two{
+  .hero-section-two {
     height: 620px;
 
   }
+
   .cst-hero-card {
     width: 600px;
     height: 500px;
