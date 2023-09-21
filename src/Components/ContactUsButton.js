@@ -1,13 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-
+import RectangleImage from '../assets/Images/Rectangle.png'
 const ContactUsButton = () => {
     const navigate = useNavigate();
     return (
         <>
-            <div >
-                <div className="d-flex justify-content-center d-sm-none" style={{ backgroundColor: "white" }}>
-                    <button className="btn-success col-10 cst-hero-submit-btn p-3 scrollable-button" onClick={() => navigate("/lets-talk")}>Contact us</button>
+            <div className='d-flex justify-content-center d-sm-none'>
+                <div className="new-code-cls scrollable-button p-2 col-12" style={{ backgroundColor: "white" }}>
+                    <button className="btn-success col-12 p-3 cst-hero-submit-btn" onClick={() => navigate("/lets-talk")}>Contact us</button>
                 </div>
             </div>
         </>

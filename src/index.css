@@ -54,6 +54,11 @@ body {
   z-index: 1000;
 }
 
+.new-code-cls {
+  background-image: url(./assets/Images/Rectangle.png);
+  border: none;
+}
+
 .white-button {
   color: white;
 }
@@ -383,6 +388,10 @@ label {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -1px;
+}
+
+.navbar-nav {
+  gap: 0px;
 }
 
 .cst-card-ims p {
