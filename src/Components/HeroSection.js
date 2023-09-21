@@ -3,7 +3,8 @@ import RequestRecive from "./RequestRecive";
 import HeroImage1 from '../assets/Images/heroimage.png'
 import HeroImage2 from '../assets/Images/heroSecindImage.png'
 import { useLocation, useNavigate } from "react-router-dom";
-
+import ContactUsButton from "./ContactUsButton";
+  
 const HeroSection = () => {
   const [flag, setflag] = useState(false)
   const navigate = useNavigate();
@@ -193,12 +194,8 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
-
-      <div className="d-flex justify-content-center d-sm-none" style={{ backgroundColor: "white" }}>
-        <button className="btn-success col-10 cst-hero-submit-btn p-3 scrollable-button" onClick={() => navigate("/lets-talk")}>Contact us</button>
-      </div>
-
-
+ 
+      <ContactUsButton/>
 
 
     </>
