@@ -7,7 +7,10 @@ const Header = () => {
     <>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand px-4" href="#">
+          <a class="navbar-brand px-4" href="#" style={{
+            width: "176px",
+            height: "93.617px"
+          }}>
             <span className="navbar tooger-icon "></span><img src={Logo} className="img-fluid" />
           </a>
           <button class="btn btn-outline d-sm-none  mt-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

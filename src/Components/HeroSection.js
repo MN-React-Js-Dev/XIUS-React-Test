@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import RequestRecive from "./RequestRecive";
-import LetsTalkComponent from "./LetsTalkComponent";
 import HeroImage1 from '../assets/Images/heroimage.png'
 import HeroImage2 from '../assets/Images/heroSecindImage.png'
+import { useLocation, useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
   const [flag, setflag] = useState(false)
+  const navigate = useNavigate();
+  const location = useLocation();
+
 
   const handleSubmitButton = () => {
     setflag(true)
@@ -22,7 +25,6 @@ const HeroSection = () => {
   ];
 
   const HeroImages = [HeroImage1, HeroImage2]
-
   let currentIndex = 0;
   let currentIndexPara = 0;
   let currentIndexHeroImages = 0;
@@ -30,25 +32,25 @@ const HeroSection = () => {
   function changeHeading() {
     const headingElement = document.querySelector(".hero-heading");
     const parasElement = document.querySelector(".para-hero");
-    headingElement.textContent = headings[currentIndex];
-    parasElement.textContent = headings[currentIndex];
-    currentIndex = (currentIndex + 1) % headings.length;
 
-    const paraElement = document.querySelector(".para-hero");
-    paraElement.textContent = paras[currentIndexPara];
+    headingElement.textContent = headings[currentIndex];
+    parasElement.textContent = paras[currentIndexPara];
+    currentIndex = (currentIndex + 1) % headings.length;
     currentIndexPara = (currentIndexPara + 1) % paras.length;
 
     const textColor = currentIndex % 2 === 0 ? "black" : "white";
     headingElement.style.color = textColor;
     parasElement.style.color = textColor;
-    // Change background image
+
     const backgroundElement = document.querySelector(".hero-section");
     backgroundElement.style.backgroundImage = `url(${HeroImages[currentIndexHeroImages]})`;
     currentIndexHeroImages = (currentIndexHeroImages + 1) % HeroImages.length;
-}
+  }
 
-  setInterval(changeHeading, 3000); 
-
+  useEffect(() => {
+    const interval = setInterval(changeHeading, 3000);
+    return () => clearInterval(interval); // Clear interval on component unmount
+  }, []);
 
   return (
     <>
@@ -109,7 +111,7 @@ const HeroSection = () => {
                       </div>
                     </div>
                     <div className="d-flex justify-content-center ">
-                      <button className="btn-success form-control cst-hero-submit-btn w-50 " onClick={handleSubmitButton}>Submit</button>
+                      <button type="button" className="btn-success form-control cst-hero-submit-btn w-50 " onClick={handleSubmitButton}>Submit</button>
                     </div>
                   </div>
                 </div>
@@ -182,11 +184,6 @@ const HeroSection = () => {
         </div>
       </section> */}
 
-
-
-
-
-
       <section className="for-mobile-hero-mobile d-sm-none ">
         <div className="container">
           <h1 className="mobile-hero-heading text-center text-white ">Revolutionize Your Communication with IP Multimedia Subsystem (IMS)</h1>
@@ -196,11 +193,12 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
+
       <div className="d-flex justify-content-center d-sm-none" style={{ backgroundColor: "white" }}>
-        <button className="btn-success col-10 cst-hero-submit-btn p-3 scrollable-button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact us</button>
+        <button className="btn-success col-10 cst-hero-submit-btn p-3 scrollable-button" onClick={() => navigate("/lets-talk")}>Contact us</button>
       </div>
 
-      <LetsTalkComponent />
+
 
 
     </>
