@@ -620,7 +620,7 @@ textarea {
 
 
 /* Laptop screen */
-@media (max-width:1400px) {
+@media (max-width:1428px) {
   /* @media (max-width:1366px) { */
   .hero-heading {
     color: #FFF;
