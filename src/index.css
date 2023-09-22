@@ -622,6 +622,10 @@ textarea {
 /* Laptop screen */
 @media (max-width:1428px) {
   /* @media (max-width:1366px) { */
+
+    textarea{
+      height: 182px !important;
+    }
   .hero-heading {
     color: #FFF;
     font-size: 40px;
